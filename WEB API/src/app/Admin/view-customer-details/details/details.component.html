@@ -1,0 +1,72 @@
+<body><div id="divleft">
+    <table>
+        <tr>
+            <td><label>Account Number</label></td>
+            <td>:</td>
+            <td>{{AccountNumber}}</td>
+        </tr>
+        <tr>
+            <td><label class="text-inf">Account Holder</label></td>
+            <td>:</td> 
+            <td>
+                <input type="text" id="txtaccholder" class="form-control" [(ngModel)]="customers.name"  placeholder="Enter a Account Holder" />
+            </td>
+        </tr>
+        <tr>
+            <td><label>Address</label></td>
+            <td>:</td>  
+            <td><textarea class="form-control" id="txtaddress" [(ngModel)]="customers.address" ></textarea></td>
+        </tr>
+        <tr>
+            <td><label>City</label></td>
+            <td>:</td>
+            <td><input type="text" class="form-control" id="txtcity" [(ngModel)]="customers.city" placeholder="Enter City" /></td>
+            
+        </tr>
+    </table>
+</div>
+<div id="divright" >
+    <table>
+        <tr>
+            <td><label>Email</label></td>
+            <td>:</td>
+            <td><input type="email" class="form-control" id="txtEmail" [(ngModel)]="customers.email"  placeholder="Enter email"/></td>
+        </tr>
+        <tr>
+            <td><label>Contact</label></td>
+            <td>:</td>
+            <td><input type="number" class="form-control" id="txtContact" [(ngModel)]="customers.contact"  placeholder="Enter Mobile Number" /></td>
+        </tr>
+   
+        <tr>
+            <td><label>Card Number</label></td>
+            <td>:</td>
+            <td><input type="number" class="form-control" id="txtNumber"  [(ngModel)]="customers.cardNumber"  placeholder="Enter Card Number" /></td>
+        </tr>
+        <tr>
+            <td><label>Pin Number</label></td>
+            <td>:</td>
+            <td><input type="number" class="form-control" id="txtPinNumber"  [(ngModel)]="customers.pinNumber"  placeholder="Enter Pin Number" /></td>
+        </tr>
+        <tr>
+            <td><label>Account Type</label></td>
+            <td>:</td>
+                 <td>
+                 <input type="radio" name="act-type" value="savings" required> Savings
+                 <input type="radio" name="act-type" value="current" required> Current
+                 
+                </td>
+        </tr>
+    </table>
+</div>
+<div>
+       <table  id="balance">
+        <tr>
+            <td><label>Balance</label></td>
+            <td>:</td>
+            <td><input type="number" class="form-control" id="txtBalance" [(ngModel)]="customers.balance"  placeholder="Enter a Balance" /></td>
+        </tr>
+    </table>
+</div>
+<button id="butto1" mat-raised-button color="primary" (click)="UpdateDetail()">update</button>
+</body>

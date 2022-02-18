@@ -1,0 +1,68 @@
+[33mcommit 0dc42218f25264192185b58e2b75702f6ff03978[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Merge: 19fa58a f26a2e0
+Author: Sasikumar Palanisamy <sasikumarp@caresoftglobal.com>
+Date:   Fri Feb 11 16:23:33 2022 +0530
+
+    Merge branch 'main' of https://github.com/Sasikumar2000/AtmManagementProject
+
+[33mcommit f26a2e0ab660e1d1d6552796c09a3766f016abb1[m
+Merge: cb5939b a13fa50
+Author: Abishekkumar Selvam <abishekkumars@caresoftglobal.com>
+Date:   Fri Feb 11 15:59:21 2022 +0530
+
+    Merge branch 'main' of https://github.com/Sasikumar2000/AtmManagementProject
+
+[33mcommit cb5939b7bfa0692f2b51a1128f6974884414bf7d[m
+Author: Abishekkumar Selvam <abishekkumars@caresoftglobal.com>
+Date:   Fri Feb 11 15:58:56 2022 +0530
+
+    validation addded
+
+[33mcommit 19fa58abf0dd55d8fa48cc206102b27c765ad6fd[m
+Author: Sasikumar Palanisamy <sasikumarp@caresoftglobal.com>
+Date:   Fri Feb 11 15:35:05 2022 +0530
+
+    Sasi Testing  Logout button
+
+[33mcommit a13fa50d81b25a4cc6e5710e4bdb500e18e72d92[m
+Author: Sasikumar Palanisamy <sasikumarp@caresoftglobal.com>
+Date:   Fri Feb 11 15:21:56 2022 +0530
+
+    Sasi Added Logout button
+
+[33mcommit 37add72573eb7e5e7eaa8dbe0a3296abccc11c2f[m
+Author: Vithyabarathi Ganeshamoorthi <vithyabarathig@caresoftglobal.com>
+Date:   Fri Feb 11 15:03:45 2022 +0530
+
+    VB Login Changed
+
+[33mcommit ee4170dbc506019ad81694c49be10d2669ba84d3[m
+Merge: dd622f9 7312994
+Author: Sai Nutalapati <sain@caresoftglobal.com>
+Date:   Fri Feb 11 14:06:09 2022 +0530
+
+    Merge branch 'main' of https://github.com/Sasikumar2000/AtmManagementProject
+
+[33mcommit 7312994f94280bec81a7915bb999dda8549e09c2[m
+Author: Abishekkumar Selvam <abishekkumars@caresoftglobal.com>
+Date:   Fri Feb 11 14:05:43 2022 +0530
+
+    Text added
+
+[33mcommit dd622f93f29de995f0d5d48e4127365e4405b216[m
+Author: Sai Nutalapati <sain@caresoftglobal.com>
+Date:   Fri Feb 11 14:05:22 2022 +0530
+
+    sharanya added bootstrap
+
+[33mcommit 24721c71245fb47b9ded7f50418e34ede7cfd7ae[m
+Author: Sasikumar Palanisamy <sasikumarp@caresoftglobal.com>
+Date:   Fri Feb 11 13:40:51 2022 +0530
+
+    Sasi Added AngularUI
+
+[33mcommit d58ee701de11ab55128598d047089ec912548162[m
+Author: Sasikumar <97427255+Sasikumar2000@users.noreply.github.com>
+Date:   Fri Feb 11 13:36:31 2022 +0530
+
+    Initial commit

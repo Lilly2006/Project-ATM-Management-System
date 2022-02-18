@@ -1,0 +1,29 @@
+.txtmsg{
+    color: red;
+    font-weight: bold;
+    padding: 10px;
+}
+
+thead,th{
+    background-color: darkgreen;
+    color: snow;
+    border: 2px solid black;
+   font-family: 'Times New Roman', Times, serif;
+   font-size: large;
+}
+tr,td{
+    border: 2px solid black;
+
+}
+tbody{
+    background-color: lightgreen;
+    border: 2px solid black;
+
+}
+table{
+    border: 2px solid black;
+}
+body{
+    background-color: rgb(211, 205, 205);
+  
+}

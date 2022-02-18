@@ -1,0 +1,21 @@
+
+.divtab{
+    margin: 30px;
+}
+
+.txt{
+    color: red;
+}
+
+body{
+    background-color: rgb(211, 205, 205);
+  width: auto;
+  height: auto;
+}
+#account{
+    margin-left: 400px;
+    padding: 40px;
+}
+#btnTransactiom{
+    margin-left: 10px;
+}

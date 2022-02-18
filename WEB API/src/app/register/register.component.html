@@ -1,0 +1,28 @@
+ 
+ <body>
+  <h1 class="text-center text-black textsty1 pt-5">ATM Management System</h1>
+  <div class="container">  
+  <h1 class="text-center pt-2 textsty" >Register New User</h1>
+  <h2 class="text-center pt-2">{{msg}}</h2>
+    <table>
+        <tr>
+          <td><label for="email"><b>Email</b></label><input type="text" placeholder="Enter Email" name="email" required></td>
+        </tr>
+        <tr>
+          <td><label for="user"><b>Username</b></label><input type="text" [(ngModel)]="txtuserName" placeholder="Enter Username" name="user" required></td>
+        </tr>
+        <tr>
+          <td><label for="psw"><b>Password</b></label><input type="password" [(ngModel)]="txtpassWord" placeholder="Enter Password" name="psw" required></td>
+        </tr>
+        <tr>
+          <td><label for="psw-repeat"><b>Re-type Password</b></label><input type="password" placeholder="Retype Password" name="psw-repeat" required></td>
+        </tr>
+        
+    </table>
+     
+    <button type="button" (click)="Save()" class="leftregisterbtn">Register</button> 
+    <button type="button" class="rightregisterbtn" routerLink="/login" routerLinkActive="active">Login</button>
+   
+  </div>
+ 
+</body>

@@ -1,0 +1,44 @@
+body{
+    background-color: rgb(211, 205, 205);
+  
+}
+#divleft{
+    margin-left: 260px;
+    float: left;
+    width: 35%;
+    margin-top: 80px;
+  
+}
+
+/* 
+#divright{
+    /* float: right;
+    width: 29%; */
+    /* margin-top: 100px; 
+} */
+#divri{
+    /* margin-top: 100px; */
+    padding-top: 80px;
+}
+#buttonn{
+    margin-top: 70px;
+    margin-left: 580px;
+
+}
+table{
+    margin-top: 0px;
+    
+     /* padding-bottom: 200px; */
+}
+#btnReset{
+    color: rgb(0, 0, 0);
+}
+#btnReset{
+    margin-left: 50px;
+}
+#h11{
+    padding-top: 40px;
+    margin-left: 600px;
+   
+   
+}

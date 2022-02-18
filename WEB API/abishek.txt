@@ -1,0 +1,2 @@
+NavBar
+Admin                                                          View      Add      Login

@@ -1,0 +1,158 @@
+<body>
+
+
+    <div>
+        <div id="h11">
+            <h1>Customer Detail Entry</h1>
+        </div>
+        <form [formGroup]="customerdetailsForm">
+
+            <div id="divleft">
+                <table>
+                    <tr>
+                        <td><label>Account Holder</label></td>
+                        <td>:</td>
+                        <td><input type="text" id="txtaccholder" [(ngModel)]="txtaccholder" class="form-control"
+                                formControlName="name" placeholder="Enter a Account Holder" /></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td><span
+                                *ngIf="customerdetailsForm.get('name').invalid && customerdetailsForm.get('name').touched"
+                                class="text-danger">Account Holder Name is Required</span></td>
+                    </tr>
+                    <tr>
+                        <td><label>Address</label></td>
+                        <td>:</td>
+                        <td><textarea id="txtaddress" [(ngModel)]="txtaddress" class="form-control"
+                                formControlName="address"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td> <span
+                                *ngIf="customerdetailsForm.get('address').invalid && customerdetailsForm.get('address').touched"
+                                class="text-danger">Address is Required</span></td>
+                    </tr>
+                    <tr>
+                        <td><label>City</label></td>
+                        <td>:</td>
+                        <td><input type="text" id="txtcity" class="form-control" [(ngModel)]="txtcity"
+                                formControlName="city" placeholder="Enter City" /></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td> <span
+                                *ngIf="customerdetailsForm.get('city').invalid && customerdetailsForm.get('city').touched"
+                                class="text-danger">City is Required</span></td>
+
+                    </tr>
+                    <tr>
+                        <td><label>Email</label></td>
+                        <td>:</td>
+                        <td><input type="email" id="txtEmail" class="form-control" [(ngModel)]="txtEmail"
+                                formControlName="email" placeholder="Enter email" /></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td> <span
+                                *ngIf="customerdetailsForm.get('email').invalid && customerdetailsForm.get('email').touched"
+                                class="text-danger">Email is Required</span></td>
+                    </tr>
+                    <tr>
+                        <td><label>Contact</label></td>
+                        <td>:</td>
+                        <td><input type="number" id="txtContact" class="form-control" [(ngModel)]="txtContact"
+                                formControlName="phone" placeholder="Enter Mobile Number" /></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td> <span
+                                *ngIf="customerdetailsForm.get('phone').invalid && customerdetailsForm.get('phone').touched"
+                                class="text-danger">Contact is Required</span></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="divright">
+                <div id="divri">
+                    <table>
+                        <tr>
+                            <td><label>Card Number</label></td>
+                            <td>:</td>
+                            <td><input type="number" id="txtNumber" class="form-control" [(ngModel)]="txtNumber"
+                                    formControlName="cardnumber" placeholder="Enter Card Number" /></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td> <span
+                                    *ngIf="customerdetailsForm.get('cardnumber').invalid && customerdetailsForm.get('cardnumber').touched"
+                                    class="text-danger">Card Number is Required</span></td>
+                        </tr>
+                        <tr>
+                            <td><label>Pin Number</label></td>
+                            <td>:</td>
+                            <td><input type="number" id="txtPinNumber" class="form-control" [(ngModel)]="txtPinNumber"
+                                    formControlName="pinnumber" placeholder="Enter Pin Number" /></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td> <span
+                                    *ngIf="customerdetailsForm.get('pinnumber').invalid && customerdetailsForm.get('pinnumber').touched"
+                                    class="text-danger">Pin Number is Required</span></td>
+                        </tr>
+                        <tr>
+                            <td><label>Account Type</label></td>
+                            <td>:</td>
+                            <td>
+                                <input type="radio" name="act-type" value="savings" required> Savings
+                                <input type="radio" name="act-type" value="current" required> Current
+
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td><label>Account Number</label></td>
+                            <td>:</td>
+                            <td><input type="number" id="txtAccountNumber" class="form-control"
+                                    [(ngModel)]="txtAccountNumber" formControlName="accountnumber"
+                                    placeholder="Enter Account Number" /></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td> <span
+                                    *ngIf="customerdetailsForm.get('accountnumber').invalid && customerdetailsForm.get('accountnumber').touched"
+                                    class="text-danger">Account Number is Required</span></td>
+                        </tr>
+                        <tr>
+                            <td><label>Balance</label></td>
+                            <td>:</td>
+                            <td><input type="number" id="txtBalance" class="form-control" [(ngModel)]="txtBalance"
+                                    formControlName="balance" placeholder="Enter a Balance" /></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td> <span
+                                    *ngIf="customerdetailsForm.get('balance').invalid && customerdetailsForm.get('balance').touched"
+                                    class="text-danger">Balance is Required</span></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+        </form>
+    </div>
+    <div id="buttonn">
+        <button id="button1" mat-raised-button [disabled]="customerdetailsForm.invalid" (click)="submit()" type="button"
+            value="Add" id="btnAdd">Add</button>
+
+        <button mat-raised-button value="Reset" (click)="Reset()" id="btnReset">Reset</button>
+    </div>
+</body>
